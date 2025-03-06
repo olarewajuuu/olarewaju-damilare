@@ -70,7 +70,7 @@ const Home = () => {
         <h2 className="text-3xl font-bold border-b-4 border-emerald-500 inline-block mb-4">
           About Me
         </h2>
-        <p className="text-lg">
+        <p className="text-lg text-justify">
           Experienced Frontend Developer with expertise in JavaScript, React, Redux, Next.js, Nodejs, Express, Python, Django, Django Rest Framework, and other technologies. Passionate about creating engaging web experiences, optimizing performance, and ensuring cross-browser compatibility. Proven track record of delivering high-quality, scalable, and maintainable code. Adaptable in fast-paced environments and dedicated to continuous learning. Effective collaborator with a focus on exceptional user experiences.
         </p>
       </motion.div>
