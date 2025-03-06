@@ -12,7 +12,7 @@ const projects = [
   {
     id: 1,
     title: "Lantern Academy",
-    description: "I developed Lantern Academy, an innovative Madrassah located in Central Rochdale, UK. The website showcases the academy's commitment to high-quality education and character development, offering a rich variety of resources aimed at nurturing the next generation. The platform provides information on admissions, facilities, staff, and the academy's mission to create ambassadors of the Beloved Prophet ﷺ in today's society. This project demonstrates my ability to create informative and user-friendly educational websites that effectively communicate an institution's values and offerings.",
+    description: "The website showcases the academy's commitment to high-quality education and character development, offering a rich variety of resources aimed at nurturing the next generation. The platform provides information on admissions, facilities, staff..",
     technologies: ["React", "Tailwind CSS", "Redux", "Firebase"],
     image: lanternImg,
     github: "https://github.com/olarewajuuu/Lantern",
@@ -21,7 +21,7 @@ const projects = [
   {
     id: 2,
     title: "Lynkkupp Website",
-    description: "I developed LynkKupp, a professional networking platform designed to connect individuals and businesses. The website features a user-friendly interface that allows users to create profiles, showcase their skills, and connect with others in their industry. Key functionalities include a customizable dashboard, messaging system, and job board integration, enabling users to explore career opportunities and collaborate effectively. This project demonstrates my ability to create comprehensive networking solutions that foster professional growth and community engagement.",
+    description: "I developed LynkKupp, a professional networking platform designed to connect individuals and businesses. The website features a user-friendly interface that allows users to create profiles, showcase their skills, and connect with others in their industry.",
     technologies: ["React.js", "TypeScript", "Tailwind CSS", "MongoDB"],
     image: lynkuppmg,
     github: "https://github.com/olarewajuuu/lynkkupp_website",
@@ -30,7 +30,7 @@ const projects = [
   {
     id: 3,
     title: "DoctorMe",
-    description: "I developed DoctorMe, a comprehensive health platform designed to empower users with accessible medical information and services. The website features an AI-powered symptom checker, allowing users to input their symptoms and receive potential diagnoses and recommendations. Additionally, it offers a rich library of health articles authored by experienced healthcare professionals, covering topics from common ailments to preventive care. Users can also connect with local health workers through the platform, facilitating easy appointment bookings with qualified providers in their community. This project demonstrates my ability to integrate advanced technologies and user-centric design to enhance healthcare accessibility..",
+    description: "I developed DoctorMe, a comprehensive health platform designed to empower users with accessible medical information and services. The website features an AI-powered symptom checker, allowing users to input their symptoms and receive potential diagnoses and recommendations. Additionally, it offers a rich library of health articles authored by experienced healthcare professionals, covering topics from common ailments to preventive care.",
     technologies: ["JavaSrcipt", "Tailwind"],
     image: doctormeImg,
     github: "https://github.com/olarewajuuu/doctorme",
@@ -39,7 +39,7 @@ const projects = [
   {
     id: 4,
     title: "ShopFee",
-    description: "I developed Shopfeet, a modern and responsive e-commerce platform specializing in footwear. The site features a clean and intuitive design, offering seamless navigation through sections such as Home, About, Categories, and Contact Us. Users can explore product categories for men and women, browse top picks, and stay updated on new releases. The platform also includes a newsletter registration to keep customers informed about the latest products. This project highlights my ability to create user-friendly and visually appealing e-commerce solutions tailored to the footwear industry.",
+    description: "Shopfeet is a modern and responsive e-commerce platform specializing in footwear. The site features a clean and intuitive design, offering seamless navigation through sections such as Home, About, Categories, and Contact Us. Users can explore product categories for men and women, browse top picks, and stay updated on new releases.",
     technologies: ["React.js", "Tailwind CSS"],
     image: shoefeetImg,
     github: "https://github.com/olarewajuuu/Shopfeet",
@@ -47,8 +47,8 @@ const projects = [
   },
   {
     id: 5,
-    title: "Landing Page",
-    description: "I developed a modern and responsive Human Resource landing page using Next.js and Tailwind CSS. The design features a clean layout with a cohesive color palette of blue, white, and slate, ensuring a fresh and professional appearance. Key sections include a Navbar for seamless navigation, a Hero Section that captures attention, an 'About Us' section detailing the organization's mission and vision, a Services section outlining core offerings, and a Footer with essential contact information. This project showcases my ability to create engaging and user-friendly web pages tailored to specific business needs.",
+    title: "Human Resource",
+    description: "A responsive Human Resource landing page using React.js and Tailwind CSS. The design features a clean layout with a cohesive color palette of blue, white, and slate, ensuring a fresh and professional appearance.",
     technologies: ["React", "CSS", "JavaScript", "Tailwind"],
     image: landinpageImg,
     github: "https://github.com/olarewajuuu/HumanResourceLandingPage",
