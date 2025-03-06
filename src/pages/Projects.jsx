@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import lanternImg from "../assets/image/lantern.png"
-import lynkuppmg from "../assets/image/lyykuppp.png"
-import doctormeImg from "../assets/image/doctorme.png"
-import shoefeetImg from "../assets/image/shoefeet.png"
-import landinpageImg from "../assets/image/Landing pag.png"
+import { useEffect, useState } from "react";
+import lanternImg from "../assets/image/lantern.png";
+import lynkuppmg from "../assets/image/lyykuppp.png";
+import doctormeImg from "../assets/image/doctorme.png";
+import shoefeetImg from "../assets/image/shoefeet.png";
+import landinpageImg from "../assets/image/Landing pag.png";
 
-// Sample project data (Replace with actual project details)
+// Sample project data
 const projects = [
   {
     id: 1,
@@ -55,9 +56,31 @@ const projects = [
   },
 ];
 
+
 const Projects = () => {
+  const [isDarkMode, setIsDarkMode] = useState(
+    document.documentElement.classList.contains("dark")
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="p-6 lg:p-10 transition-colors">
+    <div
+      className={`p-6 lg:p-10 rounded-lg shadow-lg transition-colors ${
+        isDarkMode ? "bg-slate-900 text-white" : "bg-gray-100 text-gray-900"
+      }`}
+    >
       {/* Page Heading */}
       <motion.h2
         className="text-3xl font-bold border-b-4 border-emerald-500 inline-block mb-6"
@@ -78,7 +101,9 @@ const Projects = () => {
         {projects.map((project) => (
           <motion.div
             key={project.id}
-            className="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-lg transition-colors"
+            className={`p-4 rounded-lg shadow-lg transition-colors ${
+              isDarkMode ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-900"
+            }`}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
@@ -88,10 +113,10 @@ const Projects = () => {
               className="w-full h-48 object-cover rounded-md"
             />
             <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
-            <p className="text-gray-700 dark:text-gray-300 mt-2">{project.description}</p>
+            <p className="mt-2">{project.description}</p>
 
             {/* Technologies Used */}
-            <p className="text-sm font-semibold mt-3 text-gray-600 dark:text-gray-400">
+            <p className="text-sm font-semibold mt-3">
               <span className="text-emerald-500">Tech Stack:</span> {project.technologies.join(", ")}
             </p>
 
@@ -101,7 +126,7 @@ const Projects = () => {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:text-emerald-500"
+                className="hover:text-emerald-500"
               >
                 <FaGithub className="text-2xl" />
               </a>
@@ -109,7 +134,7 @@ const Projects = () => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:text-emerald-500"
+                className="hover:text-emerald-500"
               >
                 <FaExternalLinkAlt className="text-2xl" />
               </a>
