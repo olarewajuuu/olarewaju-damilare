@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Default light mode */
+html {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode */
+html.dark {
+    background-color: #121A2A; /* Deep Navy */
+    color: #E3E3E3; /* Light Gray */
+}
+
+/* Theme Switcher Button */
+.theme-switcher {
+    transition: background 0.3s ease;
+}
+
+html.dark .theme-switcher {
+    background: #252A34;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: black;
+}
+
+html.dark .icon {
+    color: yellow;
+}
